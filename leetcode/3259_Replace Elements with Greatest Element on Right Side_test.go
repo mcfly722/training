@@ -59,7 +59,7 @@ func replaceElements(arr []int) []int {
 	return output
 }
 
-func Test_Example1(t *testing.T) {
+func Test_3259_Example1(t *testing.T) {
 	input := []int{17, 18, 5, 4, 6, 1}
 	output := replaceElements(input)
 
@@ -68,7 +68,7 @@ func Test_Example1(t *testing.T) {
 	}
 }
 
-func Test_Example2(t *testing.T) {
+func Test_3259_Example2(t *testing.T) {
 	input := []int{400}
 	output := replaceElements(input)
 
