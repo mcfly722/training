@@ -60,14 +60,32 @@ func validMountainArray(arr []int) bool {
 	return false
 }
 
-func Test_Valid(t *testing.T) {
+func Test_3251_Example1(t *testing.T) {
+	if validMountainArray([]int{2, 1}) {
+		t.Fatal()
+	}
+}
+
+func Test_3251_Example2(t *testing.T) {
+	if validMountainArray([]int{3, 5, 5}) {
+		t.Fatal()
+	}
+}
+
+func Test_3251_Example3(t *testing.T) {
+	if !validMountainArray([]int{0, 3, 2, 1}) {
+		t.Fatal()
+	}
+}
+
+func Test_3251_Example4(t *testing.T) {
 	if !validMountainArray([]int{0, 2, 3, 4, 5, 2, 1, 0}) {
 		t.Fatal()
 	}
 }
 
-func Test_NotValid(t *testing.T) {
-	if validMountainArray([]int{0, 2, 3, 3, 5, 2, 1, 0}) {
+func Test_3251_Example5(t *testing.T) {
+	if validMountainArray([]int{0, 2, 3, 3, 5, 2, 1, 1}) {
 		t.Fatal()
 	}
 }
