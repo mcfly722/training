@@ -39,25 +39,25 @@ func checkIfExist(arr []int) bool {
 	return false
 }
 
-func Test_Found(t *testing.T) {
-	if !checkIfExist([]int{10, 2, 5, 3, 10}) {
+func Test_3250_Example1(t *testing.T) {
+	if !checkIfExist([]int{10, 2, 5, 3}) {
 		t.Fatal()
 	}
 }
 
-func Test_NotFound(t *testing.T) {
+func Test_3250_Example2(t *testing.T) {
 	if checkIfExist([]int{3, 1, 7, 11}) {
 		t.Fatal()
 	}
 }
 
-func Test_Zero(t *testing.T) {
+func Test_3250_Example3_Zero(t *testing.T) {
 	if checkIfExist([]int{-2, 0, 10, -19, 4, 6, -8}) {
 		t.Fatal()
 	}
 }
 
-func Test_ZeroAndZero(t *testing.T) {
+func Test_3250_Example4_ZeroAndZero(t *testing.T) {
 	if !checkIfExist([]int{0, 0}) {
 		t.Fatal()
 	}
