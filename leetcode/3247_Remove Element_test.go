@@ -63,7 +63,7 @@ We can move all the occurrences of this element to the end of the array. Use two
 Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us.
 */
 
-func shiftIntArrayLeft(nums []int, pos int) {
+func shiftIntArrayLeft_3247(nums []int, pos int) {
 	for i := pos + 1; i <= len(nums)-1; i++ {
 		nums[i-1] = nums[i]
 	}
@@ -74,7 +74,7 @@ func removeElement(nums []int, val int) int {
 
 	for i := 0; i <= len(nums)-1; i++ {
 		if nums[i] == val {
-			shiftIntArrayLeft(nums, i)
+			shiftIntArrayLeft_3247(nums, i)
 			nums = nums[:len(nums)-1]
 			i--
 			resultSize--
@@ -87,13 +87,12 @@ func removeElement(nums []int, val int) int {
 func Test_3247_shiftIntArrayLeft1(t *testing.T) {
 	nums := []int{0, 1, 2, 3}
 
-	shiftIntArrayLeft(nums, 2)
+	shiftIntArrayLeft_3247(nums, 2)
 	nums = nums[:len(nums)-1]
 
 	if !intArraysIsEqual(nums, []int{0, 1, 3}) {
 		t.Fatal(fmt.Sprintf("nums=%v", nums))
 	}
-
 }
 
 func Test_3247_Example1(t *testing.T) {

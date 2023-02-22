@@ -1,6 +1,8 @@
 package main_test
 
-import "testing"
+import (
+	"testing"
+)
 
 func intArraysIsEqual(first, second []int) bool {
 	if len(first) != len(second) {
