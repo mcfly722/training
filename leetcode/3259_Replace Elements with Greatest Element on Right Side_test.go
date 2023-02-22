@@ -59,18 +59,6 @@ func replaceElements(arr []int) []int {
 	return output
 }
 
-func intArraysIsEqual(first, second []int) bool {
-	if len(first) != len(second) {
-		return false
-	}
-	for i := range first {
-		if first[i] != second[i] {
-			return false
-		}
-	}
-	return true
-}
-
 func Test_Example1(t *testing.T) {
 	input := []int{17, 18, 5, 4, 6, 1}
 	output := replaceElements(input)
