@@ -95,7 +95,6 @@ func Test_3253_Example1(t *testing.T) {
 	nums2 := []int{2, 5, 6}
 
 	merge(nums1, 3, nums2, len(nums2))
-	fmt.Println(fmt.Sprintf("%v", nums1))
 
 	if !intArraysIsEqual(nums1, []int{1, 2, 2, 3, 5, 6}) {
 		t.Fatal(fmt.Sprintf("%v", nums1))
