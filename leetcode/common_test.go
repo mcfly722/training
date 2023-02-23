@@ -16,6 +16,18 @@ func intArraysIsEqual(first, second []int) bool {
 	return true
 }
 
+func byteArraysIsEqual(first, second []byte) bool {
+	if len(first) != len(second) {
+		return false
+	}
+	for i := range first {
+		if first[i] != second[i] {
+			return false
+		}
+	}
+	return true
+}
+
 func Test_intArraysIsEqual_Example1(t *testing.T) {
 	if !intArraysIsEqual([]int{}, []int{}) {
 		t.Fatal()
