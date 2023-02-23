@@ -64,7 +64,7 @@ func twoSum(nums []int, target int) []int {
 		}
 	}
 
-	for k, _ := range resultMap {
+	for k := range resultMap {
 		result = append(result, k)
 	}
 
