@@ -46,7 +46,7 @@ func Test_IsEqualIntArrays_Example1(t *testing.T) {
 	}
 }
 
-func Test_intArraysIsEqual_Example2(t *testing.T) {
+func Test_IsEqualIntArrays_Example2(t *testing.T) {
 	if !IsEqualIntArrays([]int{1}, []int{1}) {
 		t.Fatal()
 	}
