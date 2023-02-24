@@ -58,7 +58,7 @@ func Test_3260_shiftIntArrayLeft1(t *testing.T) {
 	shiftIntArrayLeft_3260(nums, 2)
 	nums = nums[:len(nums)-1]
 
-	if !intArraysIsEqual(nums, []int{0, 1, 3}) {
+	if !IsEqual2IntArray(nums, []int{0, 1, 3}) {
 		t.Fatal(fmt.Sprintf("nums=%v", nums))
 	}
 }
@@ -68,7 +68,7 @@ func Test_3260_Example1(t *testing.T) {
 
 	output := sortArrayByParity(input)
 
-	if !(intArraysIsEqual(output, []int{2, 4, 3, 1}) || intArraysIsEqual(output, []int{2, 4, 1, 3}) || intArraysIsEqual(output, []int{4, 2, 1, 3})) {
+	if !(IsEqual2IntArray(output, []int{2, 4, 3, 1}) || IsEqual2IntArray(output, []int{2, 4, 1, 3}) || IsEqual2IntArray(output, []int{4, 2, 1, 3})) {
 		t.Fatal(fmt.Sprintf("%v", output))
 	}
 }
@@ -78,7 +78,7 @@ func Test_3260_Example2(t *testing.T) {
 
 	output := sortArrayByParity(input)
 
-	if !(intArraysIsEqual(output, []int{0})) {
+	if !(IsEqual2IntArray(output, []int{0})) {
 		t.Fatal(fmt.Sprintf("%v", output))
 	}
 }

@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func intArraysIsEqual(first, second []int) bool {
+func IsEqual2IntArray(first, second []int) bool {
 	if len(first) != len(second) {
 		return false
 	}
@@ -40,32 +40,32 @@ func stringArraysIsEqual(first, second []string) bool {
 	return true
 }
 
-func Test_intArraysIsEqual_Example1(t *testing.T) {
-	if !intArraysIsEqual([]int{}, []int{}) {
+func Test_IsEqual2IntArray_Example1(t *testing.T) {
+	if !IsEqual2IntArray([]int{}, []int{}) {
 		t.Fatal()
 	}
 }
 
 func Test_intArraysIsEqual_Example2(t *testing.T) {
-	if !intArraysIsEqual([]int{1}, []int{1}) {
+	if !IsEqual2IntArray([]int{1}, []int{1}) {
 		t.Fatal()
 	}
 }
 
-func Test_intArraysIsEqual_Example3(t *testing.T) {
-	if intArraysIsEqual([]int{1}, []int{2}) {
+func Test_IsEqual2IntArray_Example3(t *testing.T) {
+	if IsEqual2IntArray([]int{1}, []int{2}) {
 		t.Fatal()
 	}
 }
 
-func Test_intArraysIsEqual_Example4(t *testing.T) {
-	if !intArraysIsEqual([]int{1, 2, 3}, []int{1, 2, 3}) {
+func Test_IsEqual2IntArray_Example4(t *testing.T) {
+	if !IsEqual2IntArray([]int{1, 2, 3}, []int{1, 2, 3}) {
 		t.Fatal()
 	}
 }
 
-func Test_intArraysIsEqual_Example5(t *testing.T) {
-	if intArraysIsEqual([]int{1, 2, 5}, []int{1, 2, 3}) {
+func Test_IsEqual2IntArray_Example5(t *testing.T) {
+	if IsEqual2IntArray([]int{1, 2, 5}, []int{1, 2, 3}) {
 		t.Fatal()
 	}
 }

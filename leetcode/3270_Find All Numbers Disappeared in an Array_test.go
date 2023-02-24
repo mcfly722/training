@@ -74,14 +74,14 @@ func findDisappearedNumbers(nums []int) []int {
 
 func Test_3270_Example1(t *testing.T) {
 	disappearedNumbers := findDisappearedNumbers([]int{4, 3, 2, 7, 8, 2, 3, 1})
-	if !intArraysIsEqual(disappearedNumbers, []int{5, 6}) {
+	if !IsEqual2IntArray(disappearedNumbers, []int{5, 6}) {
 		t.Fatal(fmt.Sprintf("%v", disappearedNumbers))
 	}
 }
 
 func Test_3270_Example2(t *testing.T) {
 	disappearedNumbers := findDisappearedNumbers([]int{1, 1})
-	if !intArraysIsEqual(disappearedNumbers, []int{2}) {
+	if !IsEqual2IntArray(disappearedNumbers, []int{2}) {
 		t.Fatal(fmt.Sprintf("%v", disappearedNumbers))
 	}
 }

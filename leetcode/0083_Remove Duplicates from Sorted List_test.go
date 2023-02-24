@@ -53,28 +53,28 @@ func deleteDuplicates(head *ListNode) *ListNode {
 
 func Test_0083_Example1(t *testing.T) {
 	result := List2IntArray(deleteDuplicates(IntArray2List([]int{1, 1, 2})))
-	if !intArraysIsEqual(*result, []int{1, 2}) {
+	if !IsEqual2IntArray(*result, []int{1, 2}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0083_Example2(t *testing.T) {
 	result := List2IntArray(deleteDuplicates(IntArray2List([]int{1, 1, 2, 3, 3})))
-	if !intArraysIsEqual(*result, []int{1, 2, 3}) {
+	if !IsEqual2IntArray(*result, []int{1, 2, 3}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0083_Example3(t *testing.T) {
 	result := List2IntArray(deleteDuplicates(IntArray2List([]int{1, 1})))
-	if !intArraysIsEqual(*result, []int{1}) {
+	if !IsEqual2IntArray(*result, []int{1}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0083_Example4(t *testing.T) {
 	result := List2IntArray(deleteDuplicates(IntArray2List([]int{})))
-	if !intArraysIsEqual(*result, []int{}) {
+	if !IsEqual2IntArray(*result, []int{}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }

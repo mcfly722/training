@@ -63,7 +63,7 @@ func Test_3259_Example1(t *testing.T) {
 	input := []int{17, 18, 5, 4, 6, 1}
 	output := replaceElements(input)
 
-	if !intArraysIsEqual(output, []int{18, 6, 6, 6, 1, -1}) {
+	if !IsEqual2IntArray(output, []int{18, 6, 6, 6, 1, -1}) {
 		t.Fatal(fmt.Sprintf("%v", output))
 	}
 }
@@ -72,7 +72,7 @@ func Test_3259_Example2(t *testing.T) {
 	input := []int{400}
 	output := replaceElements(input)
 
-	if !intArraysIsEqual(output, []int{-1}) {
+	if !IsEqual2IntArray(output, []int{-1}) {
 		t.Fatal()
 	}
 }
