@@ -16,7 +16,7 @@ func IsEqualIntArrays(first, second []int) bool {
 	return true
 }
 
-func byteArraysIsEqual(first, second []byte) bool {
+func IsEqualByteArrays(first, second []byte) bool {
 	if len(first) != len(second) {
 		return false
 	}
