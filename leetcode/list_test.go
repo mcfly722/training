@@ -36,7 +36,7 @@ func IntArray2List(arr []int) *ListNode {
 	return first
 }
 
-func list2Arr(head *ListNode) *[]int {
+func List2IntArray(head *ListNode) *[]int {
 	result := []int{}
 
 	if head == nil {

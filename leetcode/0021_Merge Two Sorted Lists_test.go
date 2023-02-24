@@ -88,7 +88,7 @@ func Test_0021_Example1(t *testing.T) {
 	l1 := IntArray2List([]int{1, 2, 4})
 	l2 := IntArray2List([]int{1, 3, 4})
 
-	result := list2Arr(mergeTwoLists(l1, l2))
+	result := List2IntArray(mergeTwoLists(l1, l2))
 
 	if !intArraysIsEqual(*result, []int{1, 1, 2, 3, 4, 4}) {
 		t.Fatal(fmt.Sprintf("%v", result))
@@ -99,7 +99,7 @@ func Test_0021_Example2(t *testing.T) {
 	l1 := IntArray2List([]int{})
 	l2 := IntArray2List([]int{1, 3, 4})
 
-	result := list2Arr(mergeTwoLists(l1, l2))
+	result := List2IntArray(mergeTwoLists(l1, l2))
 
 	if !intArraysIsEqual(*result, []int{1, 3, 4}) {
 		t.Fatal(fmt.Sprintf("%v", result))
@@ -110,7 +110,7 @@ func Test_0021_Example3(t *testing.T) {
 	l1 := IntArray2List([]int{1, 2, 4})
 	l2 := IntArray2List([]int{})
 
-	result := list2Arr(mergeTwoLists(l1, l2))
+	result := List2IntArray(mergeTwoLists(l1, l2))
 
 	if !intArraysIsEqual(*result, []int{1, 2, 4}) {
 		t.Fatal(fmt.Sprintf("%v", result))
@@ -121,7 +121,7 @@ func Test_0021_Example4(t *testing.T) {
 	l1 := IntArray2List([]int{})
 	l2 := IntArray2List([]int{})
 
-	result := list2Arr(mergeTwoLists(l1, l2))
+	result := List2IntArray(mergeTwoLists(l1, l2))
 
 	if !intArraysIsEqual(*result, []int{}) {
 		t.Fatal(fmt.Sprintf("%v", result))
