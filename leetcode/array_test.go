@@ -40,6 +40,19 @@ func IsEqualStringArrays(first, second []string) bool {
 	return true
 }
 
+func TwoDimensionalByteArray2String(array [][]byte) string {
+	result := ""
+
+	for _, row := range array {
+		for _, cell := range row {
+			result += string(cell)
+		}
+		result += "\n"
+	}
+
+	return result
+}
+
 func Test_IsEqualIntArrays_Example1(t *testing.T) {
 	if !IsEqualIntArrays([]int{}, []int{}) {
 		t.Fatal()
