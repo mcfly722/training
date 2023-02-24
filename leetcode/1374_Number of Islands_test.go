@@ -69,7 +69,7 @@ func numIslands(grid [][]byte) int {
 	count := 0
 
 	for y, row := range grid {
-		for x, _ := range row {
+		for x := range row {
 			if grid[y][x] != '0' {
 				count++
 
