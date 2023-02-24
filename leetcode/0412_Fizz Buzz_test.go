@@ -45,21 +45,21 @@ func fizzBuzz(n int) []string {
 
 func Test_0412_Example1(t *testing.T) {
 	result := fizzBuzz(3)
-	if !stringArraysIsEqual(result, []string{"1", "2", "Fizz"}) {
+	if !IsEqualStringArrays(result, []string{"1", "2", "Fizz"}) {
 		t.Fatal(result)
 	}
 }
 
 func Test_0412_Example2(t *testing.T) {
 	result := fizzBuzz(5)
-	if !stringArraysIsEqual(result, []string{"1", "2", "Fizz", "4", "Buzz"}) {
+	if !IsEqualStringArrays(result, []string{"1", "2", "Fizz", "4", "Buzz"}) {
 		t.Fatal(result)
 	}
 }
 
 func Test_0412_Example3(t *testing.T) {
 	result := fizzBuzz(15)
-	if !stringArraysIsEqual(result, []string{"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"}) {
+	if !IsEqualStringArrays(result, []string{"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"}) {
 		t.Fatal(result)
 	}
 }

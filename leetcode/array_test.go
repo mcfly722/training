@@ -28,7 +28,7 @@ func IsEqualByteArrays(first, second []byte) bool {
 	return true
 }
 
-func stringArraysIsEqual(first, second []string) bool {
+func IsEqualStringArrays(first, second []string) bool {
 	if len(first) != len(second) {
 		return false
 	}
