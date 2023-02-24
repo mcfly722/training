@@ -1,7 +1,6 @@
 package main_test
 
 import (
-	"fmt"
 	"math"
 	"testing"
 )
@@ -35,7 +34,7 @@ Constraints:
 
 func dfsShortestPath(currentPath []int, shortestPath *[]int, leavedPart int) {
 
-	if len(currentPath) >= len(*shortestPath) {
+	if len(currentPath) >= len(*shortestPath) && len(*shortestPath) != 0 {
 		return
 	}
 
@@ -65,13 +64,10 @@ func numSquares(n int) int {
 	}
 
 	shortestPath := []int{}
-	for i := 0; i < n; i++ {
-		shortestPath = append(shortestPath, 1)
-	}
 
 	dfsShortestPath([]int{}, &shortestPath, n)
 
-	fmt.Println(fmt.Sprintf("%v", shortestPath))
+	// fmt.Println(fmt.Sprintf("%v", shortestPath))
 	return len(shortestPath)
 }
 
