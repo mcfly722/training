@@ -70,35 +70,35 @@ func plusOne(digits []int) []int {
 
 func Test_0066_Example1(t *testing.T) {
 	result := plusOne([]int{1, 2, 3})
-	if !IsEqual2IntArray(result, []int{1, 2, 4}) {
+	if !IsEqualIntArrays(result, []int{1, 2, 4}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0066_Example2(t *testing.T) {
 	result := plusOne([]int{4, 3, 2, 1})
-	if !IsEqual2IntArray(result, []int{4, 3, 2, 2}) {
+	if !IsEqualIntArrays(result, []int{4, 3, 2, 2}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0066_Example4(t *testing.T) {
 	result := plusOne([]int{9})
-	if !IsEqual2IntArray(result, []int{1, 0}) {
+	if !IsEqualIntArrays(result, []int{1, 0}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0066_Example5(t *testing.T) {
 	result := plusOne([]int{9, 9, 9, 9})
-	if !IsEqual2IntArray(result, []int{1, 0, 0, 0, 0}) {
+	if !IsEqualIntArrays(result, []int{1, 0, 0, 0, 0}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0066_Example6(t *testing.T) {
 	result := plusOne([]int{})
-	if !IsEqual2IntArray(result, []int{1}) {
+	if !IsEqualIntArrays(result, []int{1}) {
 		t.Fatal(fmt.Sprintf("%v", result))
 	}
 }

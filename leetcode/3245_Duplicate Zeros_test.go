@@ -54,7 +54,7 @@ func Test_3245_Example1(t *testing.T) {
 	array := []int{1, 0, 2, 3, 0, 4, 5, 0}
 	duplicateZeros(array)
 
-	if !IsEqual2IntArray(array, []int{1, 0, 0, 2, 3, 0, 0, 4}) {
+	if !IsEqualIntArrays(array, []int{1, 0, 0, 2, 3, 0, 0, 4}) {
 		t.Fatal(fmt.Sprintf("%v", array))
 	}
 }
@@ -64,7 +64,7 @@ func Test_3245_Example2(t *testing.T) {
 	array := []int{1, 2, 3}
 	duplicateZeros(array)
 
-	if !IsEqual2IntArray(array, []int{1, 2, 3}) {
+	if !IsEqualIntArrays(array, []int{1, 2, 3}) {
 		t.Fatal(fmt.Sprintf("%v", array))
 	}
 }

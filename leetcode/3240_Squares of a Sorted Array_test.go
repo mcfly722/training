@@ -48,14 +48,14 @@ func sortedSquares(nums []int) []int {
 
 func Test_3240_Example1(t *testing.T) {
 	output := sortedSquares([]int{-4, -1, 0, 3, 10})
-	if !IsEqual2IntArray(output, []int{0, 1, 9, 16, 100}) {
+	if !IsEqualIntArrays(output, []int{0, 1, 9, 16, 100}) {
 		t.Fatal()
 	}
 }
 
 func Test_3240_Example2(t *testing.T) {
 	output := sortedSquares([]int{-7, -3, 2, 3, 11})
-	if !IsEqual2IntArray(output, []int{4, 9, 9, 49, 121}) {
+	if !IsEqualIntArrays(output, []int{4, 9, 9, 49, 121}) {
 		t.Fatal()
 	}
 }

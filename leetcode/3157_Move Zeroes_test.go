@@ -60,7 +60,7 @@ func Test_3157_shiftIntArrayLeft_3157(t *testing.T) {
 	shiftIntArrayLeft_3247(nums, 2)
 	nums = nums[:len(nums)-1]
 
-	if !IsEqual2IntArray(nums, []int{0, 1, 3}) {
+	if !IsEqualIntArrays(nums, []int{0, 1, 3}) {
 		t.Fatal(fmt.Sprintf("nums=%v", nums))
 	}
 }
@@ -69,7 +69,7 @@ func Test_3157_Example1(t *testing.T) {
 	nums := []int{0, 1, 0, 3, 12}
 	moveZeroes(nums)
 
-	if !IsEqual2IntArray(nums, []int{1, 3, 12, 0, 0}) {
+	if !IsEqualIntArrays(nums, []int{1, 3, 12, 0, 0}) {
 		t.Fatal(fmt.Sprintf("%v", nums))
 	}
 }
@@ -78,7 +78,7 @@ func Test_3157_Example2(t *testing.T) {
 	nums := []int{0}
 	moveZeroes(nums)
 
-	if !IsEqual2IntArray(nums, []int{0}) {
+	if !IsEqualIntArrays(nums, []int{0}) {
 		t.Fatal(fmt.Sprintf("%v", nums))
 	}
 }
@@ -87,7 +87,7 @@ func Test_3157_Example3(t *testing.T) {
 	nums := []int{0, 0, 1}
 	moveZeroes(nums)
 
-	if !IsEqual2IntArray(nums, []int{1, 0, 0}) {
+	if !IsEqualIntArrays(nums, []int{1, 0, 0}) {
 		t.Fatal(fmt.Sprintf("%v", nums))
 	}
 }

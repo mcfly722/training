@@ -73,21 +73,21 @@ func twoSum(nums []int, target int) []int {
 
 func Test_0001_Example1(t *testing.T) {
 	sumsIndex := twoSum([]int{2, 7, 11, 15}, 9)
-	if !(IsEqual2IntArray(sumsIndex, []int{0, 1}) || IsEqual2IntArray(sumsIndex, []int{1, 0})) {
+	if !(IsEqualIntArrays(sumsIndex, []int{0, 1}) || IsEqualIntArrays(sumsIndex, []int{1, 0})) {
 		t.Fatal(fmt.Sprintf("%v", sumsIndex))
 	}
 }
 
 func Test_0001_Example2(t *testing.T) {
 	sumsIndex := twoSum([]int{3, 2, 4}, 6)
-	if !(IsEqual2IntArray(sumsIndex, []int{1, 2}) || IsEqual2IntArray(sumsIndex, []int{2, 1})) {
+	if !(IsEqualIntArrays(sumsIndex, []int{1, 2}) || IsEqualIntArrays(sumsIndex, []int{2, 1})) {
 		t.Fatal(fmt.Sprintf("%v", sumsIndex))
 	}
 }
 
 func Test_0001_Example3(t *testing.T) {
 	sumsIndex := twoSum([]int{3, 3}, 6)
-	if !(IsEqual2IntArray(sumsIndex, []int{0, 1}) || IsEqual2IntArray(sumsIndex, []int{1, 0})) {
+	if !(IsEqualIntArrays(sumsIndex, []int{0, 1}) || IsEqualIntArrays(sumsIndex, []int{1, 0})) {
 		t.Fatal(fmt.Sprintf("%v", sumsIndex))
 	}
 }
