@@ -85,8 +85,8 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 }
 
 func Test_0021_Example1(t *testing.T) {
-	l1 := arr2List([]int{1, 2, 4})
-	l2 := arr2List([]int{1, 3, 4})
+	l1 := IntArray2List([]int{1, 2, 4})
+	l2 := IntArray2List([]int{1, 3, 4})
 
 	result := list2Arr(mergeTwoLists(l1, l2))
 
@@ -96,8 +96,8 @@ func Test_0021_Example1(t *testing.T) {
 }
 
 func Test_0021_Example2(t *testing.T) {
-	l1 := arr2List([]int{})
-	l2 := arr2List([]int{1, 3, 4})
+	l1 := IntArray2List([]int{})
+	l2 := IntArray2List([]int{1, 3, 4})
 
 	result := list2Arr(mergeTwoLists(l1, l2))
 
@@ -107,8 +107,8 @@ func Test_0021_Example2(t *testing.T) {
 }
 
 func Test_0021_Example3(t *testing.T) {
-	l1 := arr2List([]int{1, 2, 4})
-	l2 := arr2List([]int{})
+	l1 := IntArray2List([]int{1, 2, 4})
+	l2 := IntArray2List([]int{})
 
 	result := list2Arr(mergeTwoLists(l1, l2))
 
@@ -118,8 +118,8 @@ func Test_0021_Example3(t *testing.T) {
 }
 
 func Test_0021_Example4(t *testing.T) {
-	l1 := arr2List([]int{})
-	l2 := arr2List([]int{})
+	l1 := IntArray2List([]int{})
+	l2 := IntArray2List([]int{})
 
 	result := list2Arr(mergeTwoLists(l1, l2))
 

@@ -5,7 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func arr2List(arr []int) *ListNode {
+func IntArray2List(arr []int) *ListNode {
 
 	if len(arr) == 0 {
 		return nil
