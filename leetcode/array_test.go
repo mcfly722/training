@@ -24,7 +24,7 @@ func IsEqualIntMatricies(first, second [][]int) bool {
 		if len(row) != len(second[y]) {
 			return false
 		}
-		for x, _ := range row {
+		for x := range row {
 			if first[y][x] != second[y][x] {
 				return false
 			}
