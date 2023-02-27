@@ -16,6 +16,23 @@ func IsEqualIntArrays(first, second []int) bool {
 	return true
 }
 
+func IsEqualIntMatricies(first, second [][]int) bool {
+	if len(first) != len(second) {
+		return false
+	}
+	for y, row := range first {
+		if len(row) != len(second[y]) {
+			return false
+		}
+		for x, _ := range row {
+			if first[y][x] != second[y][x] {
+				return false
+			}
+
+		}
+	}
+	return true
+}
 func IsEqualByteArrays(first, second []byte) bool {
 	if len(first) != len(second) {
 		return false
