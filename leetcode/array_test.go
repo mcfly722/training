@@ -38,7 +38,6 @@ func IsEqualStringsArrays(first, second []string) bool {
 	if len(first) != len(second) {
 		return false
 	}
-
 	for y, s := range first {
 		if s != second[y] {
 			return false
