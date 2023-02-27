@@ -101,48 +101,42 @@ func openLock(deadends []string, target string) int {
 	return -1
 }
 
-/*
-func Test_1375_Example1(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", getAllNeighbours("0000")))
-}
-*/
-
-func Test_1375_Example1(t *testing.T) {
+func Test_0752_Example1(t *testing.T) {
 	steps := openLock([]string{"0201", "0101", "0102", "1212", "2002"}, "0202")
 	if steps != 6 {
 		t.Fatal(steps)
 	}
 }
 
-func Test_1375_Example2(t *testing.T) {
-	steps := openLock([]string{"0000"}, "0009")
+func Test_0752_Example2(t *testing.T) {
+	steps := openLock([]string{"8888"}, "0009")
 	if steps != 1 {
 		t.Fatal(steps)
 	}
 }
 
-func Test_1375_Example3(t *testing.T) {
+func Test_0752_Example3(t *testing.T) {
 	steps := openLock([]string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"}, "8888")
 	if steps != -1 {
 		t.Fatal(steps)
 	}
 }
 
-func Test_1375_Example4(t *testing.T) {
+func Test_0752_Example4(t *testing.T) {
 	steps := openLock([]string{}, "0000")
 	if steps != 0 {
 		t.Fatal(steps)
 	}
 }
 
-func Test_1375_Example5(t *testing.T) {
+func Test_0752_Example5(t *testing.T) {
 	steps := openLock([]string{"0000"}, "8888")
 	if steps != -1 {
 		t.Fatal(steps)
 	}
 }
 
-func Test_1375_Example6(t *testing.T) {
+func Test_0752_Example6(t *testing.T) {
 	steps := openLock([]string{"1111", "0000"}, "8888")
 	if steps != -1 {
 		t.Fatal(steps)

@@ -52,7 +52,7 @@ func sortArrayByParity(nums []int) []int {
 	return result
 }
 
-func Test_3260_shiftIntArrayLeft1(t *testing.T) {
+func Test_3260_Example0(t *testing.T) {
 	nums := []int{0, 1, 2, 3}
 
 	shiftIntArrayLeft_3260(nums, 2)

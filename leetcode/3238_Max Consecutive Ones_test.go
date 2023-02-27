@@ -55,7 +55,7 @@ func Test_3238_Example2(t *testing.T) {
 	}
 }
 
-func Test_3238_Example3_Zero(t *testing.T) {
+func Test_3238_Example3(t *testing.T) {
 	if findMaxConsecutiveOnes([]int{0}) != 0 {
 		t.Fatal()
 	}

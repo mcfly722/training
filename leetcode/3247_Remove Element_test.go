@@ -84,7 +84,7 @@ func removeElement(nums []int, val int) int {
 	return resultSize
 }
 
-func Test_3247_shiftIntArrayLeft1(t *testing.T) {
+func Test_3247_Example0(t *testing.T) {
 	nums := []int{0, 1, 2, 3}
 
 	shiftIntArrayLeft_3247(nums, 2)

@@ -1,7 +1,6 @@
 package main_test
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -107,8 +106,6 @@ func Test_1374_Example2(t *testing.T) {
 	}
 
 	result := numIslands(grid)
-
-	fmt.Println(result)
 
 	if result != 3 {
 		t.Fatal(result)

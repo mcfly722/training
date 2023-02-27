@@ -146,19 +146,39 @@ func solveNQueens(n int) [][]string {
 }
 
 func Test_0051_Example1(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", solveNQueens(1)))
+	result := fmt.Sprintf("%v", solveNQueens(1))
+	requiredAnswer := "[[Q]]"
+	if result != requiredAnswer {
+		t.Fatal(result)
+	}
 }
 
 func Test_0051_Example2(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", solveNQueens(2)))
+	result := fmt.Sprintf("%v", solveNQueens(2))
+	requiredAnswer := "[]"
+	if result != requiredAnswer {
+		t.Fatal(result)
+	}
 }
 func Test_0051_Example3(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", solveNQueens(3)))
+	result := fmt.Sprintf("%v", solveNQueens(3))
+	requiredAnswer := "[]"
+	if result != requiredAnswer {
+		t.Fatal(result)
+	}
 }
 func Test_0051_Example4(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", solveNQueens(4)))
+	result := fmt.Sprintf("%v", solveNQueens(4))
+	requiredAnswer := "[[.Q.. ...Q Q... ..Q.] [..Q. Q... ...Q .Q..]]"
+	if result != requiredAnswer {
+		t.Fatal(result)
+	}
 }
 
 func Test_0051_Example5(t *testing.T) {
-	fmt.Println(fmt.Sprintf("%v", solveNQueens(5)))
+	result := fmt.Sprintf("%v", solveNQueens(5))
+	requiredAnswer := "[[Q.... ..Q.. ....Q .Q... ...Q.] [Q.... ...Q. .Q... ....Q ..Q..] [.Q... ...Q. Q.... ..Q.. ....Q] [.Q... ....Q ..Q.. Q.... ...Q.] [..Q.. Q.... ...Q. .Q... ....Q] [..Q.. ....Q .Q... ...Q. Q....] [...Q. Q.... ..Q.. ....Q .Q...] [...Q. .Q... ....Q ..Q.. Q....] [....Q .Q... ...Q. Q.... ..Q..] [....Q ..Q.. Q.... ...Q. .Q...]]"
+	if result != requiredAnswer {
+		t.Fatal(result)
+	}
 }

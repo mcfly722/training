@@ -51,13 +51,13 @@ func Test_3250_Example2(t *testing.T) {
 	}
 }
 
-func Test_3250_Example3_Zero(t *testing.T) {
+func Test_3250_Example3(t *testing.T) {
 	if checkIfExist([]int{-2, 0, 10, -19, 4, 6, -8}) {
 		t.Fatal()
 	}
 }
 
-func Test_3250_Example4_ZeroAndZero(t *testing.T) {
+func Test_3250_Example4(t *testing.T) {
 	if !checkIfExist([]int{0, 0}) {
 		t.Fatal()
 	}

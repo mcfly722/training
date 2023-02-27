@@ -54,7 +54,7 @@ func moveZeroes(nums []int) {
 	}
 }
 
-func Test_3157_shiftIntArrayLeft_3157(t *testing.T) {
+func Test_3157_Example1(t *testing.T) {
 	nums := []int{0, 1, 2, 3}
 
 	shiftIntArrayLeft_3247(nums, 2)
@@ -65,7 +65,7 @@ func Test_3157_shiftIntArrayLeft_3157(t *testing.T) {
 	}
 }
 
-func Test_3157_Example1(t *testing.T) {
+func Test_3157_Example2(t *testing.T) {
 	nums := []int{0, 1, 0, 3, 12}
 	moveZeroes(nums)
 
@@ -74,7 +74,7 @@ func Test_3157_Example1(t *testing.T) {
 	}
 }
 
-func Test_3157_Example2(t *testing.T) {
+func Test_3157_Example3(t *testing.T) {
 	nums := []int{0}
 	moveZeroes(nums)
 
@@ -83,7 +83,7 @@ func Test_3157_Example2(t *testing.T) {
 	}
 }
 
-func Test_3157_Example3(t *testing.T) {
+func Test_3157_Example4(t *testing.T) {
 	nums := []int{0, 0, 1}
 	moveZeroes(nums)
 

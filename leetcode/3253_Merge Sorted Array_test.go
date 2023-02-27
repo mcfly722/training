@@ -79,7 +79,7 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 	}
 }
 
-func Test_3253_shiftArray1(t *testing.T) {
+func Test_3253_Example0(t *testing.T) {
 	arr := []int{1, 2, 3, 4, 5, 6}
 	shiftArray(arr, 4)
 	arr[4] = -1

@@ -63,31 +63,31 @@ func findNumbers(nums []int) int {
 	return counter
 }
 
-func Test_3237_Example1(t *testing.T) {
+func Test_3237_Example2(t *testing.T) {
 	if findNumbers([]int{12, 345, 2, 6, 7896}) != 2 {
 		t.Fatal()
 	}
 }
 
-func Test_3237_Example_Number_0(t *testing.T) {
+func Test_3237_Example0(t *testing.T) {
 	if NumberOfDigits(0) != 1 {
 		t.Fatal()
 	}
 }
 
-func Test_3237_Example_Number_1(t *testing.T) {
+func Test_3237_Example1(t *testing.T) {
 	if NumberOfDigits(1) != 1 {
 		t.Fatal()
 	}
 }
 
-func Test_3237_Example_Number_123(t *testing.T) {
+func Test_3237_Example3(t *testing.T) {
 	if NumberOfDigits(123) != 3 {
 		t.Fatal()
 	}
 }
 
-func Test_3237_Example_Number_1234(t *testing.T) {
+func Test_3237_Example4(t *testing.T) {
 	if NumberOfDigits(1234) != 4 {
 		t.Fatal()
 	}
