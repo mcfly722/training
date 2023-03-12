@@ -33,7 +33,7 @@ func maxPoints(points [][]int) int {
 	max := 0
 
 	// single point
-	if len(points)==1 {
+	if len(points) == 1 {
 		return 1
 	}
 
@@ -133,9 +133,9 @@ func Test_0149_Example5(t *testing.T) {
 	}
 }
 
-func Test_0149_Example5(t *testing.T) {
+func Test_0149_Example6(t *testing.T) {
 	sample := [][]int{
-		{0, 0}
+		{0, 0},
 	}
 
 	if maxPoints(sample) != 1 {
