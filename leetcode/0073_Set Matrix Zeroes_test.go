@@ -119,7 +119,9 @@ func Test_0073_Example1(t *testing.T) {
 
 	setZeroes(grid)
 
-	fmt.Println(fmt.Sprintf("%v", grid))
+	if fmt.Sprintf("%v", grid) != "[[1 0 1] [0 0 0] [1 0 1]]" {
+		t.Fatal(fmt.Sprintf("%v", grid))
+	}
 }
 
 func Test_0073_Example2(t *testing.T) {
@@ -131,7 +133,9 @@ func Test_0073_Example2(t *testing.T) {
 
 	setZeroes(grid)
 
-	fmt.Println(fmt.Sprintf("%v", grid))
+	if fmt.Sprintf("%v", grid) != "[[0 0 0 0] [0 4 5 0] [0 3 1 0]]" {
+		t.Fatal(fmt.Sprintf("%v", grid))
+	}
 }
 
 func Test_0073_Example3(t *testing.T) {
@@ -143,5 +147,7 @@ func Test_0073_Example3(t *testing.T) {
 
 	setZeroes(grid)
 
-	fmt.Println(fmt.Sprintf("%v", grid))
+	if fmt.Sprintf("%v", grid) != "[[1 0 1 0] [0 0 0 0] [0 0 0 0]]" {
+		t.Fatal(fmt.Sprintf("%v", grid))
+	}
 }
