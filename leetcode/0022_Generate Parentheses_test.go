@@ -79,7 +79,7 @@ func generateParenthesis(n int) []string {
 }
 
 func Test_0022_Example1(t *testing.T) {
-	result := generateParenthesis(4)
+	result := generateParenthesis(3)
 	if fmt.Sprintf("%v", result) != "[()()() ()(()) (()()) (())() ((()))]" {
 		t.Fatal(result)
 	}
