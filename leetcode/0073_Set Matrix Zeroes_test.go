@@ -47,7 +47,7 @@ func setZeroes(matrix [][]int) {
 	// search first zero
 zeroFound:
 	for y, row := range matrix {
-		for x, _ := range row {
+		for x := range row {
 			if matrix[y][x] == 0 {
 				zeroX = x
 				zeroY = y
