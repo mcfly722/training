@@ -64,52 +64,52 @@ func Constructor(k int) MyCircularQueue {
 	return queue
 }
 
-func (this *MyCircularQueue) EnQueue(value int) bool {
-	if this.IsFull() {
+func (current *MyCircularQueue) EnQueue(value int) bool {
+	if current.IsFull() {
 		return false
 	}
-	if this.IsEmpty() {
-		this.head = 0
+	if current.IsEmpty() {
+		current.head = 0
 	}
-	this.tail = (this.tail + 1) % this.size
-	this.data[this.tail] = value
+	current.tail = (current.tail + 1) % current.size
+	current.data[current.tail] = value
 	return true
 }
 
-func (this *MyCircularQueue) DeQueue() bool {
-	if this.IsEmpty() {
+func (current *MyCircularQueue) DeQueue() bool {
+	if current.IsEmpty() {
 		return false
 	}
-	if this.head == this.tail {
-		this.head = -1
-		this.tail = -1
+	if current.head == current.tail {
+		current.head = -1
+		current.tail = -1
 		return true
 	}
 
-	this.head = (this.head + 1) % this.size
+	current.head = (current.head + 1) % current.size
 	return true
 }
 
-func (this *MyCircularQueue) Front() int {
-	if this.IsEmpty() {
+func (current *MyCircularQueue) Front() int {
+	if current.IsEmpty() {
 		return -1
 	}
-	return this.data[this.head]
+	return current.data[current.head]
 }
 
-func (this *MyCircularQueue) Rear() int {
-	if this.IsEmpty() == true {
+func (current *MyCircularQueue) Rear() int {
+	if current.IsEmpty() == true {
 		return -1
 	}
-	return this.data[this.tail]
+	return current.data[current.tail]
 }
 
-func (this *MyCircularQueue) IsEmpty() bool {
-	return this.head == -1
+func (current *MyCircularQueue) IsEmpty() bool {
+	return current.head == -1
 }
 
-func (this *MyCircularQueue) IsFull() bool {
-	return ((this.tail + 1) % this.size) == this.head
+func (current *MyCircularQueue) IsFull() bool {
+	return ((current.tail + 1) % current.size) == current.head
 }
 
 /**
