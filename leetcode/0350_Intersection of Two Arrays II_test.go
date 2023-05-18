@@ -40,11 +40,7 @@ func intersect(nums1 []int, nums2 []int) []int {
 	intersected := []int{}
 
 	for _, num := range nums1 {
-		if _, found := existing[num]; found {
-			existing[num]++
-		} else {
-			existing[num] = 1
-		}
+		existing[num]++
 	}
 
 	for _, num := range nums2 {

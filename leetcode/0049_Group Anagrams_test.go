@@ -49,11 +49,7 @@ func groupAnagrams(strs []string) [][]string {
 
 		key := sortLettersInString(str)
 
-		if _, found := anagrams[key]; found {
-			anagrams[key] = append(anagrams[key], str)
-		} else {
-			anagrams[key] = []string{str}
-		}
+		anagrams[key] = append(anagrams[key], str)
 	}
 
 	result := [][]string{}

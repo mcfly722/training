@@ -31,11 +31,7 @@ func firstUniqChar(s string) int {
 	chars := map[rune]int{}
 
 	for _, c := range s {
-		if _, found := chars[c]; found {
-			chars[c]++
-		} else {
-			chars[c] = 1
-		}
+		chars[c]++
 	}
 
 	for i, symbol := range s {
