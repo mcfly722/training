@@ -52,34 +52,34 @@ func runningSum(nums []int) []int {
 func Test_1480_Example1(t *testing.T) {
 	output := runningSum([]int{1, 2, 3, 4})
 	if !IsEqualIntArrays(output, []int{1, 3, 6, 10}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 
 func Test_1480_Example2(t *testing.T) {
 	output := runningSum([]int{1, 1, 1, 1, 1})
 	if !IsEqualIntArrays(output, []int{1, 2, 3, 4, 5}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 
 func Test_1480_Example4(t *testing.T) {
 	output := runningSum([]int{3, 1, 2, 10, 1})
 	if !IsEqualIntArrays(output, []int{3, 4, 6, 16, 17}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 
 func Test_1480_Example5(t *testing.T) {
 	output := runningSum([]int{})
 	if !IsEqualIntArrays(output, []int{}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 
 func Test_1480_Example6(t *testing.T) {
 	output := runningSum([]int{5})
 	if !IsEqualIntArrays(output, []int{5}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }

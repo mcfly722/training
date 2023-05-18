@@ -39,6 +39,7 @@ The problem specifies that the numbers in the array will be in the range [1, n] 
 
 */
 
+/*
 func sliceContains_3270(arr []int, num int) bool {
 	for _, a := range arr {
 		if a == num {
@@ -48,6 +49,7 @@ func sliceContains_3270(arr []int, num int) bool {
 	return false
 	//	return slices.Contains(arr, num) // from "golang.org/x/exp/slices"
 }
+*/
 
 func findDisappearedNumbers(nums []int) []int {
 
@@ -75,13 +77,13 @@ func findDisappearedNumbers(nums []int) []int {
 func Test_3270_Example1(t *testing.T) {
 	disappearedNumbers := findDisappearedNumbers([]int{4, 3, 2, 7, 8, 2, 3, 1})
 	if !IsEqualIntArrays(disappearedNumbers, []int{5, 6}) {
-		t.Fatal(fmt.Sprintf("%v", disappearedNumbers))
+		t.Fatalf(fmt.Sprintf("%v", disappearedNumbers))
 	}
 }
 
 func Test_3270_Example2(t *testing.T) {
 	disappearedNumbers := findDisappearedNumbers([]int{1, 1})
 	if !IsEqualIntArrays(disappearedNumbers, []int{2}) {
-		t.Fatal(fmt.Sprintf("%v", disappearedNumbers))
+		t.Fatalf(fmt.Sprintf("%v", disappearedNumbers))
 	}
 }

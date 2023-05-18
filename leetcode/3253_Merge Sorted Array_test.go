@@ -97,7 +97,7 @@ func Test_3253_Example1(t *testing.T) {
 	merge(nums1, 3, nums2, len(nums2))
 
 	if !IsEqualIntArrays(nums1, []int{1, 2, 2, 3, 5, 6}) {
-		t.Fatal(fmt.Sprintf("%v", nums1))
+		t.Fatalf(fmt.Sprintf("%v", nums1))
 	}
 }
 
@@ -108,7 +108,7 @@ func Test_3253_Example2(t *testing.T) {
 	merge(nums1, 1, nums2, len(nums2))
 
 	if !IsEqualIntArrays(nums1, []int{1}) {
-		t.Fatal(fmt.Sprintf("%v", nums1))
+		t.Fatalf(fmt.Sprintf("%v", nums1))
 	}
 }
 
@@ -119,7 +119,7 @@ func Test_3253_Example3(t *testing.T) {
 	merge(nums1, 0, nums2, len(nums2))
 
 	if !IsEqualIntArrays(nums1, []int{1}) {
-		t.Fatal(fmt.Sprintf("%v", nums1))
+		t.Fatalf(fmt.Sprintf("%v", nums1))
 	}
 }
 
@@ -130,6 +130,6 @@ func Test_3253_Example4(t *testing.T) {
 	merge(nums1, 6, nums2, len(nums2))
 
 	if !IsEqualIntArrays(nums1, []int{-1, 0, 0, 1, 2, 2, 3, 3, 3}) {
-		t.Fatal(fmt.Sprintf("%v", nums1))
+		t.Fatalf(fmt.Sprintf("%v", nums1))
 	}
 }

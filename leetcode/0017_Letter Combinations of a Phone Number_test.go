@@ -78,13 +78,13 @@ func letterCombinations(digits string) []string {
 func Test_0017_Example1(t *testing.T) {
 	result := fmt.Sprintf("%v", letterCombinations("23"))
 	if result != "[ad ae af bd be bf cd ce cf]" {
-		t.Fatal(result)
+		t.Fatalf(result)
 	}
 }
 
 func Test_0017_Example2(t *testing.T) {
 	result := letterCombinations("")
 	if len(result) != 0 {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }

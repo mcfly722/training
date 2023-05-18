@@ -52,7 +52,7 @@ func Test_PairingCommutativeNegative_Range(t *testing.T) {
 			if p, found := results[unique]; found {
 				if p.x+p.y != x+y { // not commutative sum
 
-					t.Fatal(fmt.Sprintf("duplicate found :(%v,%v)=(%v,%v)=%v", x, y, p.x, p.y, unique))
+					t.Fatalf(fmt.Sprintf("duplicate found :(%v,%v)=(%v,%v)=%v", x, y, p.x, p.y, unique))
 				}
 			} else {
 				results[unique] = pair{x: x, y: y}
@@ -66,7 +66,7 @@ func Test_PairingCommutativeNegative_Commutation(t *testing.T) {
 	for x := -1000; x < 1000; x++ {
 		for y := -1000; y < 1000; y++ {
 			if CantorPairingFunctionWithNegativeAndCommutative(x, y) != CantorPairingFunctionWithNegativeAndCommutative(y, x) {
-				t.Fatal(fmt.Sprintf("point %v,%v is not commutative!", x, y))
+				t.Fatalf(fmt.Sprintf("point %v,%v is not commutative!", x, y))
 			}
 		}
 		//fmt.Println(fmt.Sprintf("%v", x))

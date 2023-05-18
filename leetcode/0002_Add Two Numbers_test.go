@@ -93,7 +93,7 @@ func Test_0002_Example1(t *testing.T) {
 
 	result := List2IntArray(addTwoNumbers(l1, l2))
 	if !IsEqualIntArrays(*result, []int{7, 0, 8}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
@@ -103,7 +103,7 @@ func Test_0002_Example2(t *testing.T) {
 
 	result := List2IntArray(addTwoNumbers(l1, l2))
 	if !IsEqualIntArrays(*result, []int{0}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
@@ -113,7 +113,7 @@ func Test_0002_Example3(t *testing.T) {
 
 	result := List2IntArray(addTwoNumbers(l1, l2))
 	if !IsEqualIntArrays(*result, []int{8, 9, 9, 9, 0, 0, 0, 1}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
@@ -123,6 +123,6 @@ func Test_0002_Example4(t *testing.T) {
 
 	result := List2IntArray(addTwoNumbers(l1, l2))
 	if !IsEqualIntArrays(*result, []int{}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }

@@ -68,7 +68,6 @@ func groupAnagrams(strs []string) [][]string {
 
 func Test_0049_Example1(t *testing.T) {
 	result := groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"})
-
 	if fmt.Sprintf("%v", result) != "[[eat tea ate] [tan nat] [bat]]" {
 		t.Fatal(result)
 	}

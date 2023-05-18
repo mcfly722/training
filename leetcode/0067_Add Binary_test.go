@@ -64,27 +64,27 @@ func addBinary(a string, b string) string {
 func Test_0067_Example1(t *testing.T) {
 	result := addBinary("11", "1")
 	if result != "100" {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0067_Example2(t *testing.T) {
 	result := addBinary("1010", "1011")
 	if result != "10101" {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0067_Example3(t *testing.T) {
 	result := addBinary("1010", "0")
 	if result != "1010" {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0067_Example4(t *testing.T) {
 	result := addBinary("11111", "1")
 	if result != "100000" {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }

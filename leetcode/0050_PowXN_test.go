@@ -71,27 +71,27 @@ func myPow(x float64, n int) float64 {
 func Test_0050_Example1(t *testing.T) {
 	result := myPow(2, 10)
 	if result != math.Pow(2, 10) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0050_Example2(t *testing.T) {
 	result := myPow(2.1, 3)
 	if result != math.Pow(2.1, 3) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0050_Example3(t *testing.T) {
 	result := myPow(2, -2)
 	if result != math.Pow(2, -2) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0050_Example4(t *testing.T) {
 	result := myPow(123, 0)
 	if result != math.Pow(123, 0) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }

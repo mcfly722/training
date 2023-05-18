@@ -91,7 +91,7 @@ func Test_3247_Example0(t *testing.T) {
 	nums = nums[:len(nums)-1]
 
 	if !IsEqualIntArrays(nums, []int{0, 1, 3}) {
-		t.Fatal(fmt.Sprintf("nums=%v", nums))
+		t.Fatalf(fmt.Sprintf("nums=%v", nums))
 	}
 }
 
@@ -102,7 +102,7 @@ func Test_3247_Example1(t *testing.T) {
 	nums = nums[:k]
 
 	if k != 2 || !IsEqualIntArrays(nums, []int{2, 2}) {
-		t.Fatal(fmt.Sprintf("k=%v nums=%v", k, nums))
+		t.Fatalf(fmt.Sprintf("k=%v nums=%v", k, nums))
 	}
 }
 
@@ -113,6 +113,6 @@ func Test_3247_Example2(t *testing.T) {
 	nums = nums[:k]
 
 	if k != 5 || !IsEqualIntArrays(nums, []int{0, 1, 3, 0, 4}) {
-		t.Fatal(fmt.Sprintf("k=%v nums=%v", k, nums))
+		t.Fatalf(fmt.Sprintf("k=%v nums=%v", k, nums))
 	}
 }

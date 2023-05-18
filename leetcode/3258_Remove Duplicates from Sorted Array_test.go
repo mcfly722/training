@@ -79,7 +79,7 @@ func Test_3258_Example1(t *testing.T) {
 	k := removeDuplicates([]int{1, 1, 2})
 
 	if k != 2 {
-		t.Fatal(fmt.Sprintf("%v", k))
+		t.Fatalf(fmt.Sprintf("%v", k))
 	}
 }
 
@@ -87,6 +87,6 @@ func Test_3258_Example2(t *testing.T) {
 	k := removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}) // Calls your implementation
 
 	if k != 5 {
-		t.Fatal(fmt.Sprintf("%v", k))
+		t.Fatalf(fmt.Sprintf("%v", k))
 	}
 }

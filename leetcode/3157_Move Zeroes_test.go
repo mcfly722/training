@@ -61,7 +61,7 @@ func Test_3157_Example1(t *testing.T) {
 	nums = nums[:len(nums)-1]
 
 	if !IsEqualIntArrays(nums, []int{0, 1, 3}) {
-		t.Fatal(fmt.Sprintf("nums=%v", nums))
+		t.Fatalf(fmt.Sprintf("nums=%v", nums))
 	}
 }
 
@@ -70,7 +70,7 @@ func Test_3157_Example2(t *testing.T) {
 	moveZeroes(nums)
 
 	if !IsEqualIntArrays(nums, []int{1, 3, 12, 0, 0}) {
-		t.Fatal(fmt.Sprintf("%v", nums))
+		t.Fatalf(fmt.Sprintf("%v", nums))
 	}
 }
 
@@ -79,7 +79,7 @@ func Test_3157_Example3(t *testing.T) {
 	moveZeroes(nums)
 
 	if !IsEqualIntArrays(nums, []int{0}) {
-		t.Fatal(fmt.Sprintf("%v", nums))
+		t.Fatalf(fmt.Sprintf("%v", nums))
 	}
 }
 
@@ -88,6 +88,6 @@ func Test_3157_Example4(t *testing.T) {
 	moveZeroes(nums)
 
 	if !IsEqualIntArrays(nums, []int{1, 0, 0}) {
-		t.Fatal(fmt.Sprintf("%v", nums))
+		t.Fatalf(fmt.Sprintf("%v", nums))
 	}
 }

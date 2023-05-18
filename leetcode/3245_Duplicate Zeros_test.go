@@ -55,7 +55,7 @@ func Test_3245_Example1(t *testing.T) {
 	duplicateZeros(array)
 
 	if !IsEqualIntArrays(array, []int{1, 0, 0, 2, 3, 0, 0, 4}) {
-		t.Fatal(fmt.Sprintf("%v", array))
+		t.Fatalf(fmt.Sprintf("%v", array))
 	}
 }
 
@@ -65,6 +65,6 @@ func Test_3245_Example2(t *testing.T) {
 	duplicateZeros(array)
 
 	if !IsEqualIntArrays(array, []int{1, 2, 3}) {
-		t.Fatal(fmt.Sprintf("%v", array))
+		t.Fatalf(fmt.Sprintf("%v", array))
 	}
 }

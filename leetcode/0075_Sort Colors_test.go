@@ -73,7 +73,7 @@ func Test_0075_Example1(t *testing.T) {
 	sample := []int{2, 0, 2, 1, 1, 0}
 	sortColors(sample)
 	if fmt.Sprintf("%v", sample) != "[0 0 1 1 2 2]" {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -81,7 +81,7 @@ func Test_0075_Example2(t *testing.T) {
 	sample := []int{2, 0, 1}
 	sortColors(sample)
 	if fmt.Sprintf("%v", sample) != "[0 1 2]" {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -89,6 +89,6 @@ func Test_0075_Example3(t *testing.T) {
 	sample := []int{}
 	sortColors(sample)
 	if fmt.Sprintf("%v", sample) != "[]" {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }

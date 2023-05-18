@@ -70,14 +70,14 @@ func isPalindrome(x int) bool {
 func Test_0009_Example4(t *testing.T) {
 	result := num2arrReversed(0)
 	if !IsEqualByteArrays(result, []byte{0}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0009_Example5(t *testing.T) {
 	result := num2arrReversed(12345670)
 	if !IsEqualByteArrays(result, []byte{0, 7, 6, 5, 4, 3, 2, 1}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 

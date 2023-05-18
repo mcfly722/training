@@ -77,7 +77,7 @@ func Test_0770_Example1(t *testing.T) {
 	rotateMatrix(sample)
 
 	if !IsEqualIntMatricies(sample, requiredAnswer) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -98,7 +98,7 @@ func Test_0770_Example2(t *testing.T) {
 	rotateMatrix(sample)
 
 	if !IsEqualIntMatricies(sample, requiredAnswer) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -111,7 +111,7 @@ func Test_0770_Example3(t *testing.T) {
 	rotateMatrix(sample)
 
 	if !IsEqualIntMatricies(sample, requiredAnswer) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -122,6 +122,6 @@ func Test_0770_Example4(t *testing.T) {
 	rotateMatrix(sample)
 
 	if !IsEqualIntMatricies(sample, requiredAnswer) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }

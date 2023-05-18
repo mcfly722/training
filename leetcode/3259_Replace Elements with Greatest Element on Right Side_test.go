@@ -64,7 +64,7 @@ func Test_3259_Example1(t *testing.T) {
 	output := replaceElements(input)
 
 	if !IsEqualIntArrays(output, []int{18, 6, 6, 6, 1, -1}) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 

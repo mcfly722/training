@@ -174,7 +174,7 @@ func Test_0037_Example1(t *testing.T) {
 	for y, row := range board {
 		for x := range row {
 			if board[y][x] != solution[y][x] {
-				t.Fatal(TwoDimensionalByteArray2String(board))
+				t.Fatalf(TwoDimensionalByteArray2String(board))
 			}
 		}
 	}

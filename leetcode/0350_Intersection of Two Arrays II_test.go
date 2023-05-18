@@ -62,13 +62,13 @@ func intersect(nums1 []int, nums2 []int) []int {
 func Test_0350_Example1(t *testing.T) {
 	result := intersect([]int{1, 2, 2, 1}, []int{2, 2})
 	if !IsEqualIntArrays(result, []int{2, 2}) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }
 
 func Test_0350_Example2(t *testing.T) {
 	result := intersect([]int{4, 9, 5}, []int{9, 4, 9, 8, 4})
 	if !(IsEqualIntArrays(result, []int{4, 9}) || IsEqualIntArrays(result, []int{9, 4})) {
-		t.Fatal(fmt.Sprintf("%v", result))
+		t.Fatalf(fmt.Sprintf("%v", result))
 	}
 }

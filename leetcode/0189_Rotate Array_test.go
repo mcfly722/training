@@ -71,7 +71,7 @@ func Test_0189_Example0(t *testing.T) {
 	sample := []int{1, 2, 3, 4, 5, 6, 7}
 	rotate(sample, len(sample))
 	if !IsEqualIntArrays(sample, []int{1, 2, 3, 4, 5, 6, 7}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -79,7 +79,7 @@ func Test_0189_Example1(t *testing.T) {
 	sample := []int{1, 2, 3, 4, 5, 6, 7}
 	rotate(sample, 1)
 	if !IsEqualIntArrays(sample, []int{7, 1, 2, 3, 4, 5, 6}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -87,7 +87,7 @@ func Test_0189_Example3(t *testing.T) {
 	sample := []int{1, 2, 3, 4, 5, 6, 7}
 	rotate(sample, 3)
 	if !IsEqualIntArrays(sample, []int{5, 6, 7, 1, 2, 3, 4}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -95,7 +95,7 @@ func Test_0189_Example4(t *testing.T) {
 	sample := []int{-1, -100, 3, 99}
 	rotate(sample, 2)
 	if !IsEqualIntArrays(sample, []int{3, 99, -1, -100}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -103,7 +103,7 @@ func Test_0189_Example5(t *testing.T) {
 	sample := []int{}
 	rotate(sample, 1)
 	if !IsEqualIntArrays(sample, []int{}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }
 
@@ -111,6 +111,6 @@ func Test_0189_Example6(t *testing.T) {
 	sample := []int{6}
 	rotate(sample, 1)
 	if !IsEqualIntArrays(sample, []int{6}) {
-		t.Fatal(fmt.Sprintf("%v", sample))
+		t.Fatalf(fmt.Sprintf("%v", sample))
 	}
 }

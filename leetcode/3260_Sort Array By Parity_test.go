@@ -59,7 +59,7 @@ func Test_3260_Example0(t *testing.T) {
 	nums = nums[:len(nums)-1]
 
 	if !IsEqualIntArrays(nums, []int{0, 1, 3}) {
-		t.Fatal(fmt.Sprintf("nums=%v", nums))
+		t.Fatalf(fmt.Sprintf("nums=%v", nums))
 	}
 }
 
@@ -69,7 +69,7 @@ func Test_3260_Example1(t *testing.T) {
 	output := sortArrayByParity(input)
 
 	if !(IsEqualIntArrays(output, []int{2, 4, 3, 1}) || IsEqualIntArrays(output, []int{2, 4, 1, 3}) || IsEqualIntArrays(output, []int{4, 2, 1, 3})) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }
 
@@ -79,6 +79,6 @@ func Test_3260_Example2(t *testing.T) {
 	output := sortArrayByParity(input)
 
 	if !(IsEqualIntArrays(output, []int{0})) {
-		t.Fatal(fmt.Sprintf("%v", output))
+		t.Fatalf(fmt.Sprintf("%v", output))
 	}
 }

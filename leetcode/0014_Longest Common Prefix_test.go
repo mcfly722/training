@@ -58,20 +58,20 @@ func longestCommonPrefix(strs []string) string {
 func Test_0014_Example1(t *testing.T) {
 	prefix := longestCommonPrefix([]string{"flower", "flow", "flight"})
 	if prefix != "fl" {
-		t.Fatal(fmt.Sprintf("prefix:%v", prefix))
+		t.Fatalf(fmt.Sprintf("prefix:%v", prefix))
 	}
 }
 
 func Test_0014_Example2(t *testing.T) {
 	prefix := longestCommonPrefix([]string{"dog", "racecar", "car"})
 	if prefix != "" {
-		t.Fatal(fmt.Sprintf("prefix:%v", prefix))
+		t.Fatalf(fmt.Sprintf("prefix:%v", prefix))
 	}
 }
 
 func Test_0014_Example3(t *testing.T) {
 	prefix := longestCommonPrefix([]string{"do", "doing", "door"})
 	if prefix != "do" {
-		t.Fatal(fmt.Sprintf("prefix:%v", prefix))
+		t.Fatalf(fmt.Sprintf("prefix:%v", prefix))
 	}
 }
