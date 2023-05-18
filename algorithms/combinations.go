@@ -1,11 +1,6 @@
 package algorithms
 
-/*
-int Multiply(int a, int b) {
-	return a * b;
-
-}
-*/
+//#include "combinations.h"
 import "C"
 
 func Multiply(a int, b int) int {
