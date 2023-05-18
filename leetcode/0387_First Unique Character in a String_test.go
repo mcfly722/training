@@ -35,7 +35,7 @@ func firstUniqChar(s string) int {
 	}
 
 	for i, symbol := range s {
-		amount, _ := chars[symbol]
+		amount := chars[symbol]
 		if amount < 2 {
 			return i
 		}
