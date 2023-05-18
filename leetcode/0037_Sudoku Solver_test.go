@@ -1,7 +1,6 @@
 package leetcode_test
 
 import (
-	"math"
 	"testing"
 )
 
@@ -82,8 +81,8 @@ func IsCorrectHorizontal(board [][]byte, row int) bool {
 }
 
 func IsCorrectSmallSquare(board [][]byte, column int, row int) bool {
-	xs := (int)(math.Floor(float64(column / 3)))
-	ys := (int)(math.Floor(float64(row / 3)))
+	xs := int(float64(column) / 3)
+	ys := int(float64(row / 3))
 
 	digits := []byte{}
 
