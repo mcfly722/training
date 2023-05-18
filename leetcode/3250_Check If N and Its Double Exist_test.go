@@ -1,4 +1,4 @@
-package main_test
+package leetcode_test
 
 /*
 Check If N and Its Double Exist
