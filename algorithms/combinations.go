@@ -9,5 +9,5 @@ int Multiply(int a, int b) {
 import "C"
 
 func Multiply(a int, b int) int {
-	return C.Multiply(C.int(a), C.int(b))
+	return int(C.Multiply(C.int(a), C.int(b)))
 }
