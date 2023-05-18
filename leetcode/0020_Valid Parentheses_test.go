@@ -44,7 +44,7 @@ func isValid(s string) bool {
 		case '{', '(', '[':
 			stack.Push(s[i])
 		case '}', ')', ']':
-			err, c := stack.Pop()
+			c, err := stack.Pop()
 			if err != nil || c != closingPairs[s[i]] {
 				return false
 			}
@@ -53,7 +53,7 @@ func isValid(s string) bool {
 		}
 	}
 
-	err, _ := stack.Pop() // stack finished
+	_, err := stack.Pop() // stack finished
 	return err != nil
 }
 

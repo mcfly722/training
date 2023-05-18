@@ -12,13 +12,13 @@ func (s *Stack) IsEmpty() bool {
 	return len(*s) == 0
 }
 
-func (s *Stack) Pop() (error, byte) {
+func (s *Stack) Pop() (byte, error) {
 	if s.IsEmpty() {
-		return errors.New("stack is empty"), 0
+		return 0, errors.New("stack is empty")
 	} else {
 		index := len(*s) - 1
 		element := (*s)[index]
 		*s = (*s)[:index]
-		return nil, element
+		return element, nil
 	}
 }
