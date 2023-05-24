@@ -18,14 +18,14 @@ func Test_Multiply(t *testing.T) {
 func Test_NextSequenceRecursive_ShowSeveral(t *testing.T) {
 	array := []byte{0, 0, 0, 0, 5}
 	for i := 0; ; i++ {
-		t.Logf(fmt.Sprintf("%7v %v", i, array))
+		//t.Logf(fmt.Sprintf("%7v %v", i, array))
 		if !algorithms.NextSequenceRecursive(&array, 3) {
 			break
 		}
 	}
 }
 
-func Test_NextSequenceRecursive_Count(t *testing.T) {
+func Test_NextSequenceRecursive_Count_1048575(t *testing.T) {
 	array := []byte{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5}
 
 	i := 0
@@ -35,8 +35,9 @@ func Test_NextSequenceRecursive_Count(t *testing.T) {
 		}
 		i++
 	}
-	t.Logf(fmt.Sprintf("total operations: %7v", i))
-
+	if i != 1048575 {
+		t.Fatalf(fmt.Sprintf("total operations: %7v", i))
+	}
 }
 
 func Benchmark_NextSequenceRecursive(b *testing.B) {
@@ -56,14 +57,14 @@ func Benchmark_NextSequenceRecursive(b *testing.B) {
 func Test_NextSequenceFastest_ShowSeveral(t *testing.T) {
 	array := []byte{0, 0, 0, 0, 5}
 	for i := 0; ; i++ {
-		t.Logf(fmt.Sprintf("%7v %v", i, array))
+		//t.Logf(fmt.Sprintf("%7v %v", i, array))
 		if !algorithms.NextSequenceFastest(&array, 3) {
 			break
 		}
 	}
 }
 
-func Test_NextSequenceFastest_Count(t *testing.T) {
+func Test_NextSequenceFastest_Count_1048575(t *testing.T) {
 	array := []byte{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5}
 
 	i := 0
@@ -73,7 +74,10 @@ func Test_NextSequenceFastest_Count(t *testing.T) {
 		}
 		i++
 	}
-	t.Logf(fmt.Sprintf("total operations: %7v", i))
+
+	if i != 1048575 {
+		t.Fatalf(fmt.Sprintf("total operations: %7v", i))
+	}
 
 }
 
@@ -89,4 +93,15 @@ func Benchmark_NextSequenceFastest(b *testing.B) {
 			}
 		}
 	}
+}
+
+func Test_NextSequenceFastest_cgo_Count(t *testing.T) {
+	i := algorithms.NextSequenceFastest_cgo_Count_1048575_batch(100)
+	if i != 1048575*100 {
+		t.Fatalf(fmt.Sprintf("total operations: %7v", i))
+	}
+}
+
+func Benchmark_NextSequenceFastest_cgo(b *testing.B) {
+	algorithms.NextSequenceFastest_cgo_Count_1048575_batch(b.N)
 }
