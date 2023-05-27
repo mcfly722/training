@@ -1,5 +1,8 @@
 package algorithms
 
+//#include "ladder.h"
+import "C"
+
 /*
 	ladder(height) -> gaps -> sequence
 
@@ -34,12 +37,14 @@ func NewLadder(n int) *[]int {
 	NextLadder - fast generation of next ladder which is less than maxHeight
 	returns last modification position in ladder
 */
-func NextLadder(array *[]int, height int) int {
+func NextLadder(array *[]int, maxHeight int) int {
 
 	// get last correct modification position
-	pos := len(*array) - 1
+	length := len(*array)
+	pos := length - 1
+	max := maxHeight - pos
 
-	for ; pos > -1 && (*array)[pos] >= height-(len(*array)-1-pos); pos-- {
+	for ; pos > -1 && (*array)[pos] >= max+pos; pos-- {
 	}
 
 	if pos == -1 {
@@ -53,9 +58,13 @@ func NextLadder(array *[]int, height int) int {
 	pos++
 
 	// reset tail
-	for ; pos < len(*array); pos++ {
+	for ; pos < length; pos++ {
 		(*array)[pos] = (*array)[pos-1] + 1
 	}
 
 	return r
+}
+
+func NextLadder_cgo_Count_352715_batch(n int) uint64 {
+	return uint64(C.NextLadder_Count_352715_batch(C.int(n)))
 }

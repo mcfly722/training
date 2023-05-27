@@ -29,11 +29,20 @@ func Test_NextLadder_Count_352715(t *testing.T) {
 }
 
 func Benchmark_NextLadder(b *testing.B) {
-
 	for i := 0; i < b.N; i++ {
 		ladder := algorithms.NewLadder(10)
-
 		for algorithms.NextLadder(ladder, 21) != -1 {
 		}
 	}
+}
+
+func Test_NextLadder_cgo_Count(t *testing.T) {
+	i := algorithms.NextLadder_cgo_Count_352715_batch(100)
+	if i != 352715*100 {
+		t.Fatalf(fmt.Sprintf("total operations: %7v", i))
+	}
+}
+
+func Benchmark_NextLadder_cgo(b *testing.B) {
+	algorithms.NextLadder_cgo_Count_352715_batch(b.N)
 }
