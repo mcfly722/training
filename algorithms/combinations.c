@@ -1,8 +1,3 @@
-int Multiply(int a, int b) {
-	return a * b;
-}
-
-
 unsigned char NextSequenceFastest(unsigned char * array, unsigned char base) {
 	int i;
 

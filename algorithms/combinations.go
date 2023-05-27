@@ -3,10 +3,6 @@ package algorithms
 //#include "combinations.h"
 import "C"
 
-func Multiply(a int, b int) int {
-	return int(C.Multiply(C.int(a), C.int(b)))
-}
-
 func NextSequenceFastest(array *[]byte, base byte) bool {
 
 	for i := 0; (*array)[i] < base; i++ {
